@@ -44,10 +44,14 @@ Plug 'terryma/vim-multiilpe-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': '/.install -all'}
 Plug 'junegunn/fzf.vim'
+Plug 'wakatime/vim-wakatime'
+Plug 'neovimhaskell/nvim-hs'
+Plug 'neovim/pynvim'
 call plug#end()
 
 colorscheme gruvbox
 set background=dark
+set termguicolors
 
 set hidden
 
@@ -62,5 +66,5 @@ let mapleader="\<space>"
 
 nnoremap <leader>; A;<esc>
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim
-
+nnoremap <c-s> :files<cr>
 
